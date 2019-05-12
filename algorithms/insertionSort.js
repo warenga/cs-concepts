@@ -8,7 +8,7 @@ const insertionSort = (array) => {
     }
   }
   return array;
-}
+};
 
-const arr = [4, 7, 1, 3, 90, 2, 45, 12, 32, 54]
+const arr = [4, 7, 1, 3, 90, 2, 45, 12, 32, 54];
 insertionSort(arr); // [ 1, 2, 3, 4, 7, 12, 32, 45, 54, 90 ]

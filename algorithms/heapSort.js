@@ -3,7 +3,7 @@ const swap = (array, firstItem, lastItem) => {
 
   array[firstItem] = array[lastItem];
   array[lastItem] = fItem;
-}
+};
 
 const heapify = (array, index, arraySize) => {
   let largest = index;
@@ -22,7 +22,7 @@ const heapify = (array, index, arraySize) => {
     swap(array, index, largest);
     heapify(array, largest, arraySize);
   }
-}
+};
 
 const maxHeap = (array) => {
   let index = Math.floor((array.length / 2) - 1);
@@ -30,7 +30,7 @@ const maxHeap = (array) => {
     heapify(array, index, array.length)
     index -= 1;
   };
-}
+};
 
 const heapSort = () => {
   maxHeap(array);
@@ -43,8 +43,8 @@ const heapSort = () => {
     arraySize -= 1;
     heapify(array, 0, arraySize);
     lastElement -= 1;
-  }
-}
+  };
+};
 
 const array = [2, 4, 5, 1, 9, 3];
 heapSort(array);

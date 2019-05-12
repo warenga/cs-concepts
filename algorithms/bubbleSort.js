@@ -3,7 +3,7 @@ const swap = (array, leftElement, rightElement) => {
 
   array[leftElement] = array[rightElement];
   array[rightElement] = temp;
-}
+};
 
 const bubbleSort = (array) => {
   let swapped;
@@ -17,7 +17,7 @@ const bubbleSort = (array) => {
     }
   } while (swapped);
   return array;
-}
+};
 
 const arr = [3, 8, 19, 2, 56, 3, 1, 7, 20, 5];
 bubbleSort(arr); // [ 1, 2, 3, 3, 5, 7, 8, 19, 20, 56 ]
