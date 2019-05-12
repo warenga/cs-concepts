@@ -1,4 +1,3 @@
-
 const splitArray = (array, startIndex, endIndex) => {
   const pivot = array[endIndex];
   let index = startIndex;
@@ -22,13 +21,13 @@ const recursiveSort = (array, start, end) => {
     recursiveSort(array, start, pivotIndex - 1);
     recursiveSort(array, pivotIndex + 1, end);
   }
-}
+};
 
-const quickSort = (array, start, end) => {
+const quickSort = (array) => {
   const startIndex = 0;
   const endIndex = array.length - 1;
   recursiveSort(array, startIndex, endIndex);
-}
+};
 
 const arr = [2, 1, 7, 3, 9, 4];
 quickSort(arr);
